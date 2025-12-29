@@ -76,6 +76,7 @@ public class numberStreamAggregator {
 
             if (!sc.hasNextInt()) {
                 sc.next();      // discard invalid input
+                System.out.println("discard invalid input");
                 continue;
             }
 

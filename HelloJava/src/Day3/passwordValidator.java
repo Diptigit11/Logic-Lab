@@ -86,12 +86,12 @@ public class passwordValidator {
         String password = sc.nextLine();
 
         if (isValid(password, username)) {
-            System.out.println("Valid Password ✅");
+            System.out.println("Valid Password");
         } else {
-            System.out.println("Invalid Password ❌");
+            System.out.println("Invalid Password");
 
             // Find which part of username matched
-            if (password.toLowerCase().contains(username.toLowerCase().substring(1))) {
+            if (password.toLowerCase().contains(username.toLowerCase().substring(0))) {
                 System.out.println(
                     "Invalid: contains username sequence \"" +
                     username.substring(1) + "\"."
